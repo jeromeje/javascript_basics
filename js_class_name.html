@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.get element by class name</title>
+    
+</head>
+
+<body >
+    <button class="bla blue" onclick="blue()">blue </button>
+    <button class="bla green" onclick="green()">green</button>
+    <button class="bla red" onclick="red()">red</button>
+    <button class="bla" onclick="reset()">reset</button>
+
+<script>
+    var all= document.getElementsByClassName("bla");
+    function blue(){
+        document.getElementsByClassName("blue")[0].style.backgroundColor = "blue";
+    }
+    function green(){
+        document.getElementsByClassName("green")[0].style.backgroundColor = "green";
+    }
+    function red(){
+        document.getElementsByClassName("red")[0].style.backgroundColor = "red";
+    }
+    function reset(){
+        for(i=0;i<=all.length;i++){
+            all[i].style.backgroundColor="white";
+        }
+    }
+</script>
+</body>
+
+</html>

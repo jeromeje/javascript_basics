@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.get element by id</title>
+</head>
+<body>
+    <center>
+    <table>
+<tr>    <input type="number" id="num" placeholder="Enter value" >
+</tr><br>
+    <td>
+    <button onclick="cal()">square value</button>
+    </td><br><td>
+    <button onclick="cal1()">Cube value</button>
+    </td>
+    
+    </table>
+</center>
+    <script>
+        function cal(){
+            var a= document.getElementById("num").value;
+            alert(a*a);
+        }
+        function cal1(){
+            var a= document.getElementById("num").value;
+            alert(a*a*a);
+
+        }
+    </script>
+</body>
+</html>

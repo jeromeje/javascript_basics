@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.create initial remove attribute by js</title>
+    
+</head>
+<body style="text-align: center;">
+    
+    <button onclick="add()"> add</button>
+    <button onclick="remove()">remove</button>
+    <div></div>
+</body>
+</html>
+
+<script>
+    function add(){
+        var para =document.createElement("p");
+        para.innerText="frontend for ever";
+        document.getElementsByTagName("div")[0].appendChild(para);
+       
+    }
+    function remove(){
+        var re=document.querySelector("p");
+        document.getElementsByTagName("div")[0].removeChild(re);
+    }
+</script>

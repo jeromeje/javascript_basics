@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.create initial remove attribute by js</title>
+    <style>
+        .new {
+            text-align: center;
+            color: aqua;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>hello world</h1>
+    <button onclick="add()"> add</button>
+    <button onclick="remove()">remove</button>
+</body>
+
+</html>
+
+<script>
+    function add() {
+        var a = document.createAttribute("class");     // creating the class
+        a.value = "new";                                 //adding the class name
+        document.getElementsByTagName("h1")[0].setAttributeNode(a);
+    }
+    function remove() {
+        document.getElementsByTagName("h1")[0].removeAttribute("class");
+    }
+</script>

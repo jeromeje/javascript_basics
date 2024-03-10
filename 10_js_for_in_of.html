@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For in for of in js</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    //for in     ->objects
+//for of     ->string and array
+
+    var a={id:1,name:"jer",place:"mad"}
+    for(key in a){
+        document.write(key+"=>"+a[key]+"<br>");
+    }
+    var str="front";
+    for(ele of str){
+        document.write(ele+"<br>");
+    }
+    var arr=[1,2,3,4,5,6];
+    for(ele of arr){
+        document.write(ele+"<br>");
+    }
+    
+</script>

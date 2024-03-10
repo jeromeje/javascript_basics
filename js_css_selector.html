@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.get element by css selector</title>
+</head>
+
+<body style="text-align: center;">
+    <p class="btn">Text One</p>
+    <p class="btn">Text Two</p>
+    <p class="btn">Text Three</p>
+    <p class="btn">Text Four</p>
+
+    <button onclick="qsel()">querry selector</button>
+    <button onclick="qselall()">querry selector all</button>
+</body>
+
+</html>
+<script>
+    function qsel(){
+        document.querySelector(".btn").style.color="blue";
+    }
+    function qselall(){
+        var all=document.querySelectorAll(".btn");
+        for(i=0;i<all.length;i++){
+            all[i].style.color="red";
+        }
+    }
+</script>
